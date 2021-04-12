@@ -23,7 +23,7 @@ const pegar = (item) => {
 const looping = async () => {
     console.log('Começou')
     for (let item in listaCompras) {
-        let quantidade = await pegar(item).then(result => result)
+        let quantidade = await pegar(item)
         console.log(item, quantidade)
     }
     console.log('Terminou')
